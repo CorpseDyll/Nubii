@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nubiiwallet.nubiiwallet.Controller.LoginController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="700.0" prefWidth="700.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="300.0" prefWidth="700.0" style="-fx-background-color: #100716;">
+               <children>
+                  <ImageView fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../images/loginLogo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="700.0">
+               <children>
+                  <Label text="Ingresa tu correo electrónico:" textFill="#7e005c">
+                     <font>
+                        <Font name="SansSerif Regular" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField fx:id="emailTxtField" promptText="Correo Electronico">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                  </TextField>
+                  <Label text="Ingresa tu contraseña:" textFill="#7e005c">
+                     <font>
+                        <Font name="SansSerif Regular" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <PasswordField fx:id="passwordField" promptText="Contraseña">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" top="10.0" />
+                     </VBox.margin>
+                  </PasswordField>
+                  <Hyperlink text="Olvide Mi Contraseña" textFill="#ac02ae" underline="true">
+                     <font>
+                        <Font name="SansSerif Regular" size="16.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </Hyperlink>
+                  <Button fx:id="loginBtn" mnemonicParsing="false" onAction="#onLoginButtonClick" prefHeight="35.0" prefWidth="167.0" style="-fx-background-color: #800F2F;" text="Iniciar Sesion" textFill="WHITE">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="backBtn" mnemonicParsing="false" onAction="#onBackButtonClick" prefHeight="37.0" prefWidth="167.0" style="-fx-background-color: FFD9DA;" text="Regresar">
+                     <font>
+                        <Font name="SansSerif Regular" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="-450.0" top="50.0" />
+                     </VBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
