@@ -1,0 +1,15 @@
+
+oct 10, 2024 6:37:13 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: registerBtn,Nuevo usuario registrado en la plataforma: Dylan Ortega
+oct 10, 2024 6:40:26 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: registerBtn,Nuevo usuario registrado en la plataforma: Woozy
+oct 10, 2024 6:57:49 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: registerBtn,Nuevo usuario registrado en la plataforma: Dylan Ortega
+oct 10, 2024 6:58:10 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: loginBtn,El usuario Dylan Ortega ha iniciado sesión.
+oct 10, 2024 7:15:38 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: registerBtn,Nuevo usuario registrado en la plataforma: Diane Ortega
+oct 10, 2024 7:41:41 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: loginBtn,El usuario dortega@gmail.com ha iniciado sesión.
+oct 10, 2024 7:45:01 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: loginBtn,El usuario Diane Ortega ha iniciado sesión.
