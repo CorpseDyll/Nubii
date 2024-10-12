@@ -4,28 +4,29 @@ import java.util.UUID;
 
 public class Usuario {
 
-    private String id, name, cedula, phone, direccion, email, password;
+    private String id, nombre, cedula, telefono, direccion, email, password;
 
     // Constructor principal.
-    public Usuario(String id, String email, String password, String phone, String name, String cedula,
+    public Usuario(String id, String email, String password, String telefono, String nombre, String cedula,
                    String direccion) {
         this.id = id;
-        this.name = name;
+        this.nombre = nombre;
         this.cedula = cedula;
-        this.phone = phone;
+        this.telefono = telefono;
         this.direccion = direccion;
         this.email = email;
         this.password = password;
     }
+
     // Constructor secundario.
-    public Usuario(String email, String password, String phone, String name, String cedula,
+    public Usuario(String email, String password, String telefono, String nombre, String cedula,
                    String direccion) {
-        this(UUID.randomUUID().toString(), email, password, phone, name, cedula, direccion);
+        this(UUID.randomUUID().toString(), email, password, telefono, nombre, cedula, direccion);
     }
 
     // Método para convertir el usuario a una cadena de texto en formato de archivo
     public String toFileString() {
-        return id + "@@" + email + "@@" + password + "@@" + phone + "@@" + name + "@@" + cedula +
+        return id + "@@" + email + "@@" + password + "@@" + telefono + "@@" + nombre + "@@" + cedula +
                 "@@" + direccion;
     }
 
@@ -46,12 +47,12 @@ public class Usuario {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
     public String getCedula() {
@@ -62,12 +63,12 @@ public class Usuario {
         this.cedula = cedula;
     }
 
-    public String getPhone() {
-        return phone;
+    public String getTelefono() {
+        return telefono;
     }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
 
     public String getDireccion() {

@@ -26,7 +26,7 @@ public class UserpageController implements Initializable {
             throw new RuntimeException(e);
         }
         if (usuario != null){
-            nameTextField.setText(usuario.getName());
+            nameTextField.setText(usuario.getNombre());
             saldoTextField.setText("$ 10.000");
         }
     }

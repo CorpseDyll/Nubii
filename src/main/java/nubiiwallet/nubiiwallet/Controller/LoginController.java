@@ -7,6 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import nubiiwallet.nubiiwallet.App;
 import nubiiwallet.nubiiwallet.Model.GestorSesion;
 import nubiiwallet.nubiiwallet.Model.Usuario;
 import nubiiwallet.nubiiwallet.Persistence.UsuarioPersistencia;
@@ -28,18 +29,18 @@ public class LoginController {
             String password = passwordField.getText();
             Usuario usuario = usuarioPersistencia.findUserByEmail(email); // Obtiene el usuario por el correo electrónico.
             // Verificar si el usuario existe y la contraseña es correcta:
-            if(usuario != null && usuario.getPassword().equals(password)){
-                if (email.equals("admin@nubiiwallet.com") && password.equals("admin123")){
-                    loadAdminDashboard(); // Cargar la pagina del admin.
-                } else {
-                    showAlert("Inicio de sesión exitoso", "Bienvenid@ " + usuario.getName(), Alert.AlertType.INFORMATION);
-                    loadUserpageBoard(usuario); // Método para cargar la página del usuario.
-                    ArchiveService.guardarRegistroLog("El usuario " + usuario.getName() +
-                            " ha iniciado sesión.", 1, "loginBtn", "C:/td/persistencia/log/log.txt");
-                }
+            if (email.equals("admin@nubiiwallet.com") && password.equals("admin123")){
+                loadAdminDashboard(); // Cargar la pagina del admin.
             } else {
-                showAlert("Inicio de Sesión fallido",
-                        "Credenciales inválidas.", Alert.AlertType.ERROR);
+                if(usuario != null && usuario.getPassword().equals(password)){
+                    showAlert("Inicio de sesión exitoso", "Bienvenid@ " + usuario.getNombre(), Alert.AlertType.INFORMATION);
+                    loadUserpageBoard(usuario); // Método para cargar la página del usuario.
+                    ArchiveService.guardarRegistroLog("El usuario " + usuario.getNombre() +
+                            " ha iniciado sesión.", 1, "loginBtn", "C:/td/persistencia/log/log.txt");
+                } else {
+                    showAlert("Inicio de Sesión fallido",
+                            "Credenciales inválidas.", Alert.AlertType.ERROR);
+                }
             }
         } catch (IOException e) {
             showAlert("Error", "Failed to load user data", Alert.AlertType.ERROR);
@@ -63,7 +64,15 @@ public class LoginController {
         }
     }
 
-    private void loadAdminDashboard() {
+    private void loadAdminDashboard() throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/nubiiwallet/nubiiwallet/adminpage.fxml"));
+        Scene scene = null;
+        scene = new Scene(fxmlLoader.load(), 1300, 700);
+        Stage newStage  = new Stage();
+        newStage.setTitle("Pagina de Usuario");
+        newStage.setScene(scene);
+        newStage.show();
+        newStage.setResizable(false);
     }
 
     @FXML

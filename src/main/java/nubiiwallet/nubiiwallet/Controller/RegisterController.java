@@ -11,7 +11,6 @@ import nubiiwallet.nubiiwallet.Model.Usuario;
 import nubiiwallet.nubiiwallet.Persistence.UsuarioPersistencia;
 import nubiiwallet.nubiiwallet.Services.ArchiveService;
 
-import javax.swing.*;
 import java.io.IOException;
 
 public class RegisterController {
@@ -33,7 +32,7 @@ public class RegisterController {
         Usuario usuario = new Usuario(name, cedula, telefono, direccion, email, password);
         try{
             usuarioPersistencia.guardarUsuario(usuario);
-            showAlert("Registro exitoso!!", "Bienvenid@ " + usuario.getName(), Alert.AlertType.INFORMATION);
+            showAlert("Registro exitoso!!", "Bienvenid@ " + usuario.getNombre(), Alert.AlertType.INFORMATION);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

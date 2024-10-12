@@ -13,7 +13,7 @@ public class UsuarioPersistencia {
     public void guardarUsuario(Usuario usuario) throws IOException {
         ArchiveService.guardarRegistro(ruta, usuario.toFileString(), false);
         ArchiveService.guardarRegistroLog("Nuevo usuario registrado en la plataforma: "
-                + usuario.getName(), 1, "registerBtn", "C:/td/persistencia/log/log.txt");
+                + usuario.getNombre(), 1, "registerBtn", "C:/td/persistencia/log/log.txt");
     }
 
     public ArrayList<Usuario> cargarUsuarios() throws IOException {
