@@ -3,7 +3,7 @@ package nubiiwallet.nubiiwallet.Controller;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
-import nubiiwallet.nubiiwallet.Model.SessionManager;
+import nubiiwallet.nubiiwallet.Model.GestorSesion;
 import nubiiwallet.nubiiwallet.Model.Usuario;
 import nubiiwallet.nubiiwallet.Persistence.UsuarioPersistencia;
 
@@ -18,7 +18,7 @@ public class UserpageController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
-        String userEmail = SessionManager.getCurrentUserEmail();
+        String userEmail = GestorSesion.getCurrentUserEmail();
         Usuario usuario;
         try {
             usuario = userPersistence.findUserByEmail(userEmail);

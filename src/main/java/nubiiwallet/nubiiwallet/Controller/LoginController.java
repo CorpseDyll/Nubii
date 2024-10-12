@@ -7,7 +7,7 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-import nubiiwallet.nubiiwallet.Model.SessionManager;
+import nubiiwallet.nubiiwallet.Model.GestorSesion;
 import nubiiwallet.nubiiwallet.Model.Usuario;
 import nubiiwallet.nubiiwallet.Persistence.UsuarioPersistencia;
 import nubiiwallet.nubiiwallet.Services.ArchiveService;
@@ -48,7 +48,7 @@ public class LoginController {
 
     private void loadUserpageBoard(Usuario usuario) {
         String email = usuario.getEmail();
-        SessionManager.setCurrentUserEmail(email);
+        GestorSesion.setCurrentUserEmail(email);
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/nubiiwallet/nubiiwallet/userpage.fxml"));
         Scene scene = null;
         try {

@@ -1,6 +1,6 @@
 package nubiiwallet.nubiiwallet.Model;
 
-public class SessionManager {
+public class GestorSesion {
     private static String currentUserEmail;
 
     // Método estático para establecer el correo electrónico del usuario actual
