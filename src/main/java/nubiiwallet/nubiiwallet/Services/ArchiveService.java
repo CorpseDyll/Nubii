@@ -12,11 +12,11 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 public class ArchiveService {
-    private final UsuarioPersistencia userPersistence;
+    private UsuarioPersistencia usuarioPersistencia;
 
     // Constructor que inicializa el UserPersistence.
     public ArchiveService(){
-        this.userPersistence = new UsuarioPersistencia();
+        this.usuarioPersistencia = new UsuarioPersistencia();
     }
 
     // Método para guardar una cadena en la ruta especificada.

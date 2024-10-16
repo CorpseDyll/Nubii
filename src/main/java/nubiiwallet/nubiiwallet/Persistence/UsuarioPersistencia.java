@@ -11,7 +11,7 @@ public class UsuarioPersistencia {
     private final String ruta= Persistencia.obtenerRutaProperties("rutaArchivoUsuarios");
 
     public void guardarUsuario(Usuario usuario) throws IOException {
-        ArchiveService.guardarRegistro(ruta, usuario.toFileString(), false);
+        ArchiveService.guardarRegistro(ruta, usuario.toFileString(), true);
         ArchiveService.guardarRegistroLog("Nuevo usuario registrado en la plataforma: "
                 + usuario.getNombre(), 1, "registerBtn", "C:/td/persistencia/log/log.txt");
     }

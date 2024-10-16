@@ -29,7 +29,7 @@ public class RegisterController {
         String email = emailTxtField.getText();
         String password = passwordField.getText();
 
-        Usuario usuario = new Usuario(name, cedula, telefono, direccion, email, password);
+        Usuario usuario = new Usuario(email, password, telefono, name, cedula, direccion);
         try{
             usuarioPersistencia.guardarUsuario(usuario);
             showAlert("Registro exitoso!!", "Bienvenid@ " + usuario.getNombre(), Alert.AlertType.INFORMATION);

@@ -10,12 +10,12 @@ public class Usuario {
     public Usuario(String id, String email, String password, String telefono, String nombre, String cedula,
                    String direccion) {
         this.id = id;
-        this.nombre = nombre;
-        this.cedula = cedula;
-        this.telefono = telefono;
-        this.direccion = direccion;
         this.email = email;
         this.password = password;
+        this.telefono = telefono;
+        this.nombre = nombre;
+        this.cedula = cedula;
+        this.direccion = direccion;
     }
 
     // Constructor secundario.
@@ -27,7 +27,7 @@ public class Usuario {
     // Método para convertir el usuario a una cadena de texto en formato de archivo
     public String toFileString() {
         return id + "@@" + email + "@@" + password + "@@" + telefono + "@@" + nombre + "@@" + cedula +
-                "@@" + direccion;
+                "@@" + direccion + "\n";
     }
 
     // Método estático para crear un usuario a partir de una cadena de texto
