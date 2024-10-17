@@ -31,10 +31,10 @@ public class Usuario {
     }
 
     // Método estático para crear un usuario a partir de una cadena de texto
-    public static Usuario fromFileString(String fileCategoria) {
-        String[] parts = fileCategoria.split("@@");
+    public static Usuario fromFileString(String fileString) {
+        String[] parts = fileString.split("@@");
         if (parts.length != 7) {
-            throw new IllegalArgumentException("El formato del archivo no es válido, se esperaban 8 elementos pero se encontraron " + parts.length);
+            throw new IllegalArgumentException("El formato del archivo no es válido, se esperaban 7 elementos pero se encontraron " + parts.length);
         }
         return new Usuario(parts[0], parts[1], parts[2], parts[3], parts[4], parts[5], parts[6]);
     }

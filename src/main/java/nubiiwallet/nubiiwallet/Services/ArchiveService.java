@@ -1,9 +1,5 @@
 package nubiiwallet.nubiiwallet.Services;
 
-import nubiiwallet.nubiiwallet.Model.Usuario;
-import nubiiwallet.nubiiwallet.Persistence.UsuarioPersistencia;
-import nubiiwallet.nubiiwallet.Persistence.UsuarioPersistencia;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.logging.FileHandler;
@@ -12,11 +8,10 @@ import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
 
 public class ArchiveService {
-    private UsuarioPersistencia usuarioPersistencia;
 
-    // Constructor que inicializa el UserPersistence.
+    // Constructor que inicializa el Archivo Util.
     public ArchiveService(){
-        this.usuarioPersistencia = new UsuarioPersistencia();
+
     }
 
     // Método para guardar una cadena en la ruta especificada.
