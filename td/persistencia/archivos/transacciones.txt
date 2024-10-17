@@ -1,0 +1,5 @@
+
+Depósito@@8d875cca-2f36-4e67-912f-925bda5e6420@@2024-10-16@@20000.0@@Comida@@11250
+Retiro@@6a963e91-2d10-41f6-b5cb-b9f39c18dc14@@2024-10-16@@20000.0@@Comida11250
+Retiro@@ad13ea95-42ee-4dfb-b85a-132b6b2ddc80@@2024-10-16@@50000.0@@Arriendo11250
+Depósito@@e24051e9-3b00-4bab-ad14-1a2506ec70dd@@2024-10-16@@20000.0@@Comida@@11250

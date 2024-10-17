@@ -1,6 +1,6 @@
 package nubiiwallet.nubiiwallet.Enums;
 
-public enum String {
+public enum TipoTransferencia {
     DEPOSITO,
     AHORRO,
     TRANSFERENCIA;

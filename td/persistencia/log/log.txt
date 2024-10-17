@@ -13,3 +13,41 @@ oct 10, 2024 7:41:41 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guar
 INFO: loginBtn,El usuario dortega@gmail.com ha iniciado sesión.
 oct 10, 2024 7:45:01 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
 INFO: loginBtn,El usuario Diane Ortega ha iniciado sesión.
+oct 11, 2024 9:54:07 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: loginBtn,El usuario Diane Ortega ha iniciado sesión.
+oct 11, 2024 10:05:54 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: agregarCuentaBtn,El administrador ha creado una cuenta: 1234
+oct 16, 2024 12:03:16 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: registerBtn,Nuevo usuario registrado en la plataforma: Los Quindos
+oct 16, 2024 12:06:38 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: registerBtn,Nuevo usuario registrado en la plataforma: Los Quindos
+oct 16, 2024 12:09:20 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: registerBtn,Nuevo usuario registrado en la plataforma: La Patria
+oct 16, 2024 12:11:23 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: registerBtn,Nuevo usuario registrado en la plataforma: Dylan Ortega
+oct 16, 2024 12:11:48 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: loginBtn,El usuario Dylan Ortega ha iniciado sesión.
+oct 16, 2024 12:14:11 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: registerBtn,Nuevo usuario registrado en la plataforma: Diane Ortega
+oct 16, 2024 12:20:35 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: registerBtn,Nuevo usuario registrado en la plataforma: Woozy
+oct 16, 2024 12:23:34 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: registerBtn,Nuevo usuario registrado en la plataforma: Woozy
+oct 16, 2024 12:25:15 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: registerBtn,Nuevo usuario registrado en la plataforma: Sam Hashimoto
+oct 16, 2024 12:25:56 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: loginBtn,El usuario Sam Hashimoto ha iniciado sesión.
+oct 16, 2024 9:25:01 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: registerBtn,Se ha realizado un nuevo depósito.
+oct 16, 2024 9:27:16 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: loginBtn,El usuario Diane Ortega ha iniciado sesión.
+oct 16, 2024 9:27:34 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: guardarButton,Se ha realizado un nuevo depósito.
+oct 16, 2024 10:07:29 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: retirarButton,Se ha realizado un nuevo retiro.
+oct 16, 2024 10:08:09 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: loginBtn,El usuario Diane Ortega ha iniciado sesión.
+oct 16, 2024 10:08:37 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: retirarButton,Se ha realizado un nuevo retiro.
+oct 16, 2024 10:08:54 P. M. nubiiwallet.nubiiwallet.Services.ArchiveService guardarRegistroLog
+INFO: guardarButton,Se ha realizado un nuevo depósito.
