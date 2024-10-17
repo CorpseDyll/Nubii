@@ -94,7 +94,7 @@
                      <children>
                         <VBox prefHeight="500.0" prefWidth="300.0">
                            <children>
-                              <Label text="¿Qué deseas hacer?" textFill="#7e005c">
+                              <Label text="Hacer Una Transacción:" textFill="#7e005c">
                                  <font>
                                     <Font name="SansSerif Bold" size="24.0" />
                                  </font>
@@ -102,7 +102,7 @@
                                     <Insets top="10.0" />
                                  </VBox.margin>
                               </Label>
-                              <Button mnemonicParsing="false" style="-fx-background-color: FFD9DA;" text="Agregar Dinero">
+                              <Button fx:id="depositarBtn" mnemonicParsing="false" onAction="#onDepositarButtonClick" style="-fx-background-color: FFD9DA;" text="Depositar Dinero">
                                  <font>
                                     <Font name="SansSerif Regular" size="20.0" />
                                  </font>
@@ -113,7 +113,7 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </Button>
-                              <Button mnemonicParsing="false" style="-fx-background-color: FFD9DA;" text="Retirar Dinero">
+                              <Button fx:id="retirarBtn" mnemonicParsing="false" onAction="#onRetirarButtonClick" style="-fx-background-color: FFD9DA;" text="Retirar Dinero">
                                  <font>
                                     <Font name="SansSerif Regular" size="20.0" />
                                  </font>
@@ -124,7 +124,7 @@
                                     <Cursor fx:constant="HAND" />
                                  </cursor>
                               </Button>
-                              <Button mnemonicParsing="false" style="-fx-background-color: FFD9DA;" text="Transferir Dinero">
+                              <Button fx:id="transferirBtn" mnemonicParsing="false" onAction="#onTransferirButtonClick" style="-fx-background-color: FFD9DA;" text="Transferir Dinero">
                                  <font>
                                     <Font name="SansSerif Regular" size="20.0" />
                                  </font>

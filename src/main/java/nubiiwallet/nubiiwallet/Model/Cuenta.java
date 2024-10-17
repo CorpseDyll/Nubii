@@ -8,7 +8,11 @@ public class Cuenta {
     private String idCuenta, nombreBanco, nroCuenta, cedulaUsuario;
     private TipoCuenta tipoCuenta;
 
-    public Cuenta(String idCuenta, String nombreBanco, String nroCuenta, TipoCuenta tipoCuenta, String cedulaUsuario) {
+    public Cuenta() {
+    }
+
+    public Cuenta(String idCuenta, String nombreBanco, String nroCuenta, TipoCuenta tipoCuenta,
+                  String cedulaUsuario) {
         this.idCuenta = idCuenta;
         this.nombreBanco = nombreBanco;
         this.nroCuenta = nroCuenta;
@@ -16,7 +20,7 @@ public class Cuenta {
         this.cedulaUsuario = cedulaUsuario;
     }
 
-    public Cuenta(String nombreBanco, String nroCuenta,TipoCuenta tipoCuenta, String cedulaUsuario) {
+    public Cuenta(String nombreBanco, String nroCuenta, TipoCuenta tipoCuenta, String cedulaUsuario) {
         this(UUID.randomUUID().toString(), nombreBanco, nroCuenta, tipoCuenta, cedulaUsuario);
     }
 
@@ -25,8 +29,8 @@ public class Cuenta {
                 cedulaUsuario;
     }
 
-    public static Cuenta fromFileString(String fileString){
-        String[] parts = fileString.split("@@");
+    public static Cuenta fromFileString(String fileCategoria){
+        String[] parts = fileCategoria.split("@@");
         if (parts.length != 5) {
             throw new IllegalArgumentException("El formato del archivo no es válido, se esperaban 5 elementos pero se encontraron " + parts.length);
         }

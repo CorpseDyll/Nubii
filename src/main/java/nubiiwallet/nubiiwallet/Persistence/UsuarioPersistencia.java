@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class UsuarioPersistencia {
 
-    private final String ruta= Persistencia.obtenerRutaProperties("rutaArchivoUsuarios");
+    private final String ruta = Persistencia.obtenerRutaProperties("rutaArchivoUsuarios");
 
     public void guardarUsuario(Usuario usuario) throws IOException {
         ArchiveService.guardarRegistro(ruta, usuario.toFileString(), true);
